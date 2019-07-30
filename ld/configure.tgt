@@ -126,6 +126,10 @@ arm*-*-linux-*)	        targ_emul=armelf_linux
 			targ_extra_emuls="armelf armelfb armelfb_linux"
 			targ_extra_libpath="armelfb_linux"
 			;;
+arm*-*-protura*)
+            targ_emul=armelf_protura
+            targ_extra_emuls="armelf"
+            ;;
 arm*b-*-nacl*)		targ_emul=armelfb_nacl
 			targ_extra_emuls="armelf_nacl elf_i386_nacl"
 			targ_extra_libpath=$targ_extra_emuls

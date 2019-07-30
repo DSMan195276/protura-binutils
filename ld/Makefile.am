@@ -171,6 +171,7 @@ ALL_EMULATION_SOURCES = \
 	earmelf_fbsd.c \
 	earmelf_linux.c \
 	earmelf_linux_eabi.c \
+	earmelf_protura.c \
 	earmelf_nacl.c \
 	earmelf_nbsd.c \
 	earmelf_vxworks.c \
@@ -766,6 +767,10 @@ earmelf_nbsd.c: $(srcdir)/emulparams/armelf_nbsd.sh \
   $(srcdir)/emulparams/armelf.sh \
   $(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
   $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
+
+earmelf_protura.c: $(srcdir)/emulparams/armelf_protura.sh \
+	$(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
+  	$(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS} 
 
 earmelf_vxworks.c: $(srcdir)/emulparams/armelf_vxworks.sh \
   $(srcdir)/emulparams/vxworks.sh $(srcdir)/emulparams/armelf.sh \

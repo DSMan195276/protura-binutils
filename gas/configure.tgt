@@ -149,6 +149,7 @@ case ${generic_target} in
   arm-*-linux-*eabi*)			fmt=elf  em=armlinuxeabi ;;
   arm-*-linux-*)			fmt=elf  em=linux ;;
   arm-*-uclinux*eabi*)			fmt=elf  em=armlinuxeabi ;;
+  arm-*-protura*)           fmt=elf ;;
   arm-*-uclinux*)			fmt=elf  em=linux ;;
   arm-*-nacl*)				fmt=elf  em=nacl ;;
   arm-*-netbsdelf*)			fmt=elf  em=nbsd ;;
